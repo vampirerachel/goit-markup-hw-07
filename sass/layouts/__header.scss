@@ -1,0 +1,25 @@
+@use '../utilities/_vars';
+
+.header{
+
+    .header__section {
+    border: 1px solid $white-border;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+}
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color: $highlight-color
+    
+}
+.logo--right {
+    margin-right: 100px;
+}
