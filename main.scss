@@ -1,5 +1,12 @@
 @import './sass/base/base';
 @import './sass/base/container';
 @import './sass/base/global';
+@import './sass/components/comp.scss';
 @import './sass/layouts/_header';
+@import './sass/utilities/_vars';
 @import './sass/layouts/_hero';
+@import './sass/layouts/_features';
+@import './sass/layouts/_whatwedo';
+@import './sass/layouts/_teams';
+@import './sass/layouts/_brand';
+@import './sass/layouts/_footer';

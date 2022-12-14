@@ -11,7 +11,7 @@
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
-	<link rel="stylesheet" href="./main.min.css">
+	<link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
@@ -135,12 +135,12 @@
 		</section>
 		<section class="team team__section">
 			<div class="container">
-				<h2 class="team__title">Our Team</h2>
+				<h2 class="team__section-title">Our Team</h2>
 				<ul class="team__images">
 					<li class="team__item">
 						<img src="./images/webstudio/walker.jpg"
 							alt="A man with brown hair, beard, glasses, and a maroon shirt." width="270" height="260">
-						<div class="team-images-description">
+						<div class="team__nametag">
 							<h3 class="team__name">Christopher Walker</h3>
 							<p class="team__position">Product Designer</p>
 							<ul class="social__list">
@@ -177,9 +177,9 @@
 					<li class="team__item">
 						<img src="./images/webstudio/evans.jpg"
 							alt="A woman with blond hair and glasses in a black blazer." width="270" height="260">
-						<div class="team-images-description">
-							<h3 class="team-name">Kylie Evans</h3>
-							<p class="team-position">Frontend Developer</p>
+						<div class="team__nametag">
+							<h3 class="team__name">Kylie Evans</h3>
+							<p class="team__position">Frontend Developer</p>
 							<ul class="social__list">
 								<li class="social__item">
 									<a href="#" class="social__link">
@@ -214,7 +214,7 @@
 					<li class="team__item">
 						<img src="./images/webstudio/harris.jpg" alt="A man with brown hair in blue button-up shirt."
 							width="270" height="260">
-						<div class="team__description">
+						<div class="team__nametag">
 							<h3 class="team__name">Ryan Harris</h3>
 							<p class="team__position">Marketing</p>
 							<ul class="social__list">
@@ -251,7 +251,7 @@
 					<li class="team__item">
 						<img src="./images/webstudio/moore.jpg"
 							alt="A man with brown hair, beard and glasses in a black t-shirt." width="270" height="260">
-						<div class="team__description">
+						<div class="team__nametag">
 							<h3 class="team__name">Tyler Moore</h3>
 							<p class="team__position">UI Designer</p>
 							<ul class="social__list">
@@ -290,45 +290,45 @@
 		</section>
 		<section class="container brand brand__section">
 			<h3 class="brand__title brand__title--margin">Regular Customers</h3>
-			<ul class="regular-customer-icon-list">
+			<ul class="brand__list">
 				<li>
-					<a href="#" class="brand__icon">
-						<svg class="regular-customers-icon-item" width="170" height="92">
+					<a href="#">
+						<svg  class="brand__icon" width="170" height="92">
 							<use href="./images/sprite.svg#icon-yaco"></use>
 						</svg>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="brand__icon">
-						<svg class="regular-customers-icon-item" width="170" height="92">
+					<a href="#">
+						<svg class="brand__icon" width="170" height="92">
 							<use href="./images/sprite.svg#icon-company-tagline-here"></use>
 						</svg>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="brand__icon">
-						<svg class="regular-customers-icon-item" width="170" height="92">
+					<a href="#">
+						<svg class="brand__icon" width="170" height="92">
 							<use href="./images/sprite.svg#icon-company"></use>
 						</svg>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="brand__icon">
-						<svg class="regular-customers-icon-item" width="170" height="92">
+					<a href="#">
+						<svg class="brand__icon" width="170" height="92">
 							<use href="./images/sprite.svg#icon-foster-peters"></use>
 						</svg>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="brand__icon">
-						<svg class="regular-customers-icon-item" width="170" height="92">
+					<a href="#">
+						<svg class="brand__icon" width="170" height="92">
 							<use href="./images/sprite.svg#icon-brand"></use>
 						</svg>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="brand__icon">
-						<svg class="regular-customers-icon-item" width="170" height="92">
+					<a href="#">
+						<svg class="brand__icon" width="170" height="92">
 							<use href="./images/sprite.svg#icon-company-tag-line"></use>
 						</svg>
 					</a>
@@ -337,27 +337,27 @@
 		</section>
 	</main>
 	<footer class="footer footer__section">
-		<div class="container  footer--flex">
+		<div class="container  footer__section--flex">
 			<div>
 				<a href="./index.html" class="logo footer__logo footer__logo--hover">Web Studio</a>
-				<address class="footer-address">
-					<a href="https://goo.gl/maps/3bXYwfZaXWvFELf49" class="footer__address-link footer__hover">
+				<address class="footer__address">
+					<a href="https://goo.gl/maps/3bXYwfZaXWvFELf49" class="footer__address--link footer__hover">
 						695 Park Ave, New York, NY 10065, United States</a>
 					<ul>
 						<li class="footer__list">
-							<a class="footer-contact footer-hover"
+							<a class="footer__contact footer__contact--hover"
 								href="mailto:info@devstudio.com">info@devstudio.com</a>
 						</li>
 						<li>
-							<a class="footer-contact footer-hover" href="tel:2127724150">+1 212-772-4150</a>
+							<a class="footer__contact footer-hover" href="tel:2127724150">+1 212-772-4150</a>
 						</li>
 					</ul>
 				</address>
 			</div>
-			<div class="footer__icon-positioning">
-				<h3 class="footer__icon--title">Find us on</h3>
-				<ul class="footer__icon--list">
-					<li class="footer__icon--item">
+			<div class="footer__icons">
+				<h3 class="footer_iconstitle">Find us on</h3>
+				<ul class="finduson__list">
+					<li class="finduson__item">
 						<a href="#" class="footer__icon--link">
 							<svg class="footer__icon--svg" width="20" height="20">
 								<use href="./images/sprite.svg#icon-instagram"></use>

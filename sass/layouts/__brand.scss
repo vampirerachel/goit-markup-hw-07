@@ -1,0 +1,35 @@
+@use '../utilities/_vars';
+@use '../components/comp.scss';
+
+.brand__section {
+    padding-top: 94px;
+    @extend %section__title;
+}
+
+.brand__title--margin {
+    margin-bottom: 50px;
+}
+
+.brand__list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 94px;
+}
+
+.brand__icon {
+    fill: vars.$svg-color;
+    border: 1px solid vars.$svg-color;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
+.brand__icon:hover {
+    fill: vars.$highlight-color;
+    border-color: vars.$highlight-color;
+    cursor: pointer;
+    transition: color (vars.$transition-duration) (vars.$transition-timing-function);
+}
+
+.brand__icon:not(:last-child) {
+    margin-right: 30px;
+}
