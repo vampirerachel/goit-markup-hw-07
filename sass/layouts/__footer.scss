@@ -7,6 +7,10 @@
     padding-bottom: 60px;
 }
 
+.footer__section--flex {
+    display: flex;
+}
+
 .footer__address {
     font-style: normal;
     width: 231px;
@@ -55,7 +59,7 @@
     margin-top: 15px;
 }
 
-.finduson__title {
+.findus__title {
     color: vars.$white-color;
     font-weight: 700;
     font-size: 14px;
@@ -67,55 +71,51 @@
 
 }
 
-.finduson__list {
+.findus__list {
     display: flex;
 }
-
-.finduson__item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.footer-icons-item {
+.findus__item {
     cursor: pointer;
-    background-color: vars.$svg-color;
+    background-color: vars.$footer-svg ;
     border-radius: 50%;
     height: 44px;
     width: 44px;
 }
+        .findus__item {
+            cursor: pointer;
+            background-color: vars.$footer-svg ;
+            border-radius: 50%;
+            height: 44px;
+            width: 44px;
+        }
+.findus__item:not(:last-child) {
+    margin-right: 10px;
+}
 
-.footer-icons-item:hover {
+.findus__icon--link {
+@include social__style($white-color);
+
+}
+
+.findus__icon--link:hover {
     background-color: vars.$highlight-color;
     @extend %transition;
 }
 
-.footer__section--flex {
-    display: flex;
-}
 
-
-.footer__address--link {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    fill: vars.$white-color;
-}
-
-.newsletter {
+.newsletter__form {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: auto;
 }
 
-.newsletter-form {
+.newsletter__form {
     display: flex;
     flex-direction: row;
 }
 
-.newsletter-email {
+.newsletter__title {
 
     font-family: Roboto;
     font-size: 16px;
@@ -132,7 +132,7 @@
 }
 
 
-.newsletter-button {
+.newsletter__button {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
@@ -152,15 +152,15 @@
 
 }
 
-.button-icon {
+.newsletter__button--icon {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 15px;
 }
 
-.newsletter-button:hover,
-.newsletter-button:focus {
+.newsletter__button--icon:hover,
+.newsletter__button--icon:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     color: green;
@@ -169,7 +169,7 @@
     @extend %transition;
 }
 
-.subscribe {
+.newsletter__subscribe {
     fill: vars.$white-color;
 
 }
