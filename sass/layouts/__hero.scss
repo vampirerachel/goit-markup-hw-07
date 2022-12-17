@@ -1,4 +1,5 @@
 @use '../utilities/_vars';
+@use '../components/_comp';
 
 .hero__section {
     background-color: vars.$bg-color;

@@ -36,4 +36,20 @@
 }
 
 
+%footer__title{
+        color: vars.$white-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        position: relative;
+}   
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 

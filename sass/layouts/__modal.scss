@@ -1,0 +1,235 @@
+@use '../utilities/_vars';
+@use '../components/_comp';
+
+
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition:
+        opacity 250ms, cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    height: 581px;
+    width: 528px;
+    background-color: vars.$white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal__button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 490px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.modal__button:hover,
+.modal__button:focus {
+    fill: vars.$highlight-color;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px var(--text-color-secondary);
+
+}
+
+.modal__text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: vars.$text-color-secondary;
+    margin-left: 40px;
+}
+
+
+.modal__icon {
+    position: relative;
+    display: flex;
+}
+
+.modal__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 50px;
+    margin-top: 25px;
+    transition: fill vars.$transition-duration vars.$transition-timing-function;
+}
+
+#name,
+#phone-number,
+#form-email,
+#comments {
+    min-width: 448px;
+    margin-left: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 30px;
+    cursor: pointer;
+    margin-top: 4px;
+    height: 40px;
+    color: vars.$text-color-secondary;
+}
+
+#name:hover,
+#phone-number:hover,
+#form-email:hover,
+#comments:hover #name:focus,
+#phone-number:focus,
+#form-email:focus,
+#comments:focus,
+.modal__text:hover,
+.modal__text:focus {
+    color: vars.$highlight-color;
+    border: 1px solid vars.$highlight-color;
+    @extend %transition;
+}
+
+
+
+#comments {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    text-align: left;
+    height: 120px;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.modal__form {
+    position: absolute;
+    margin-top: 60px;
+    left: 0;
+    top: 0;
+}
+
+.modal__title {
+    margin: 40px 40px 10px 40px;
+    max-width: 448px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: calc(23/20);
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.modal__form--hover:hover,
+.modal__form--hover:focus {
+    cursor: pointer;
+    fill: vars.$highlight-color;
+    @extend %transition;
+
+}
+
+
+.modal__icon {
+    margin-right: 9px;
+    display: block;
+}
+
+.input__button {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: vars.$white-color;
+    background: vars.$highlight-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid vars.$highlight-color;
+    border-radius: 4px;
+    padding: 10px 55px;
+    margin-left: 164px;
+    margin-bottom: 40px;
+    width: 200px;
+
+}
+
+.input__button:hover,
+.input__button:focus {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px vars.$text-color-secondary;
+}
+
+.input__button:active {
+    box-shadow: none;
+}
+
+.input {
+    visibility: hidden;
+}
+
+.input__terms {
+    display: flex;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: vars.$text-color-secondary;
+
+}
+
+.input__check {
+    width: 15px;
+    height: 15px;
+    border: 1px solid vars.$text-color-default;
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-top: 5px;
+    margin-left: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input__terms {
+    display: flex;
+    cursor: pointer;
+}
+
+.input__check--margin {
+    max-width: 400px;
+    margin-bottom: 10px;
+    ;
+}
+
+.icon-check {
+    fill: vars.$white-color;
+}
+
+.input:checked+.input__terms >.input__check {
+    background-color: vars.$highlight-color;
+    border: none;
+}

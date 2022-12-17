@@ -1,5 +1,5 @@
 @use '../utilities/_vars';
-@use '../components/comp.scss';
+@use '../components/_comp';
 
 .team__section {
     background-color: vars.$button-color;

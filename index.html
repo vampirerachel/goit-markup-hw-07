@@ -339,7 +339,7 @@
 	<footer class="footer footer__section">
 		<div class="container  footer__section--flex">
 			<div>
-				<a href="./index.html" class="logo footer__logo footer__logo--hover">Web Studio</a>
+				<a href="./index.html" class="logo footer__logo footer__contact--hover">Web Studio</a>
 				<address class="footer__address">
 					<a href="https://goo.gl/maps/3bXYwfZaXWvFELf49" class="footer__address--link footer__hover">
 						695 Park Ave, New York, NY 10065, United States</a>
@@ -349,7 +349,7 @@
 								href="mailto:info@devstudio.com">info@devstudio.com</a>
 						</li>
 						<li>
-							<a class="footer__contact footer-hover" href="tel:2127724150">+1 212-772-4150</a>
+							<a class="footer__contact footer__contact--hover" href="tel:2127724150">+1 212-772-4150</a>
 						</li>
 					</ul>
 				</address>
@@ -405,73 +405,69 @@
 		</div>
 	</footer>
 
-
-
 	<div class="backdrop is-hidden" data-modal>
-		<div class="modalwindow">
-			<button type="button" class="modalwindow__button" data-modal-close>
-				<svg class="modalwindow__button--style" width="18" height="18">
+		<div class="modal">
+			<button type="button" class="modal__button" data-modal-close>
+				<svg width="18" height="18">
 					<use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
 				</svg>
 			</button>
-			<h3 class="form">Leave your information and we'll call you back</h3>
-			<form action="/" name="service-request" class="form__modal">
-				<div class="form__positioning">
+			<h3 class="modal__title">Leave your information and we'll call you back</h3>
+			<form action="/" name="service-request" class="modal__form">
+				<div class="modal__form--hover">
 					<label for="name">
-						<span class="form__text">Name</span>
-						<span class="form__icon">
+						<span class="modal__text">Name</span>
+						<span class="modal__icon">
 							<input type="text" name="full-name" id="name" />
-							<svg class="form__svg" width="13" height="13">
+							<svg class="modal__svg" width="13" height="13">
 								<use href="./images/sprite.svg#icon-name"></use>
 							</svg>
 						</span>
 					</label>
 				</div>
-				<div class="form__positioning">
+				<div class="modal__form--hover">
 					<label for="phone-number">
-						<span class="form__text">Telephone</span>
-						<span class="form__icon">
+						<span class="modal__text">Telephone</span>
+						<span class="modal__icon">
 							<input type="tel" name="phone-number" id="phone-number" />
-							<svg class="form__svg" width="13" height="13">
+							<svg class="modal__svg" width="13" height="13">
 								<use href="./images/sprite.svg#icon-phone"></use>
 							</svg>
 						</span>
 					</label>
 				</div>
-				<div class="form__positioning">
-					<label for="form__email">
-						<span class="form__text">E-mail</span>
-						<span class="form__icon">
+				<div class="modal__form--hover">
+					<label for="form-email">
+						<span class="modal__text">E-mail</span>
+						<span class="modal__icon">
 							<input type="email" name="Email" id="form-email" />
-							<svg class="form__svg" width="15" height="12">
+							<svg class="modal__svg" width="15" height="12">
 								<use href="./images/sprite.svg#icon-email"></use>
 							</svg>
 						</span>
 					</label>
 				</div>
-				<div class="form__positioning">
+				<div class="modal__form--hover">
 					<label for="comments">
-						<span class="form__text">Comments</span>
+						<span class="modal__text">Comments</span>
 						<textarea name="comments" placeholder="Enter the text" id="comments" rows="200"></textarea>
 					</label>
 				</div>
-
-				<input type="checkbox" name="terms-and-conditions-name" id="terms-and-conditions"
-					class="checkbox" />
-				<label for="terms-and-conditions" class="checkbox__text">
-					<span class="checkbox__box">
-						<svg class="checkbox__check" width="11" height="8">
+	
+				<input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" class="input " />
+				<label for="terms-and-conditions" class="input__terms">
+					<span class="input__check">
+						<svg class="icon-check" width="11" height="8">
 							<use href="./images/sprite.svg#icon-check"></use>
 						</svg>
 					</span>
-					<span class="checkbox__box--margin">
-						I agree with the newsletter and accept the <a href="#" class="checkbox__text---style">Terms and
+					<span class="input__check--margin">
+						I agree with the newsletter and accept the <a href="#">Terms and
 							Conditions</a>
 				</label>
-				<button type="submit" class="sendbutton">Send</button>
+				<button type="submit" class="input__button">Send</button>
 				</span>
 			</form>
-		</div>
 	</div>
 	<script src="./js/modal.js"></script>
 </body>
