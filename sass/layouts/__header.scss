@@ -21,26 +21,34 @@
     line-height: calc(31/26);
     letter-spacing: 0.03em;
     color: vars.$highlight-color;
+
+
 }
 
 .nav__link {
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 00.02em;
-    color: vars.$text-color-default;
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
     transition: color vars.$transition-timing-function;
+    color: vars.$text-color-default;
+
+    &:hover,
+    &focus{
+        color: vars.$highlight-color;
+    }
 }
 
 
 
 .nav__link--current {
     position: relative;
-}
+    color: vars.$highlight-color;
 
-.nav__link--current::after {
+
+&::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -50,18 +58,18 @@
     bottom: 0px;
     border-radius: 2px 2px;
 }
+}
 
 .nav {
     display: flex;
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
+
 }
 
 
-.nav__link {
-    color: vars.$highlight-color;
-}
+
 
 .nav__item:hover {
     color: vars.$highlight-color;
@@ -79,13 +87,15 @@
     margin-left: auto;
 }
 
-.contacts__item:not(:last-child) {
-    margin-right: 50px;
-}
+
 
 .contacts__item {
     display: flex;
     align-items: center;
+
+    &:not(:last-child) {
+            margin-right: 50px;
+        }
 }
 
 .contacts__icon {
@@ -104,10 +114,10 @@
     margin-left: auto;
     padding-top: 32px;
     padding-bottom: 32px;
-}
 
-.contacts__link:hover {
+&:hover {
     color: vars.$highlight-color;
     cursor: pointer;
 
+}
 }

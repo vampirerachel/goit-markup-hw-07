@@ -238,17 +238,20 @@ textarea {
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
-  color: #212121;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
   transition: color cubic-bezier(0.4, 0, 0.2, 1);
+  color: #212121;
+}
+.nav__link:hover, .nav__linkfocus {
+  color: #2196F3;
 }
 
 .nav__link--current {
   position: relative;
+  color: #2196F3;
 }
-
 .nav__link--current::after {
   position: absolute;
   content: "";
@@ -267,10 +270,6 @@ textarea {
   margin-bottom: 0;
 }
 
-.nav__link {
-  color: #2196F3;
-}
-
 .nav__item:hover {
   color: #2196F3;
   cursor: pointer;
@@ -286,13 +285,12 @@ textarea {
   margin-left: auto;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .contacts__item {
   display: flex;
   align-items: center;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts__icon {
@@ -311,7 +309,6 @@ textarea {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .contacts__link:hover {
   color: #2196F3;
   cursor: pointer;

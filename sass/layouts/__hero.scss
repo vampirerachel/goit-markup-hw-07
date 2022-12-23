@@ -48,12 +48,12 @@
     border-radius: 4px;
     border: none;
     padding: 10px 20px;
-}
+    @include 
 
-.hero__button:hover,
-.hero__button:focus {
+&:hover,
+&:focus {
     color: green;
     background-color: darkblue;
     cursor: pointer;
-    transition: color vars.$transition-timing-function;
+}
 }

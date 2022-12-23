@@ -13,6 +13,11 @@
     %transition{
         transition: color (vars.$transition-duration) (vars.$transition-timing-function);
     }
+
+@mixin transition($color){
+    transition: vars.($transition-duration) (vars.$transition-timing-function);
+}
+
 @mixin social__style($fill) {
     width: 44px;
     height: 44px;
