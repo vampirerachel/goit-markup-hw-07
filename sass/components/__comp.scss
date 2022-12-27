@@ -11,11 +11,12 @@
     }
 
     %transition{
-        transition: color (vars.$transition-duration) (vars.$transition-timing-function);
+        transition:color vars.$transition-duration vars.$transition-timing-function,
+            background-color vars.$transition-duration vars.$transition-timing-function;
     }
 
 @mixin transition($color){
-    transition: vars.($transition-duration) (vars.$transition-timing-function);
+    transition: vars.$transition-duration vars.$transition-timing-function;
 }
 
 @mixin social__style($fill) {
@@ -31,13 +32,9 @@
 
 @mixin social__hover($fill, $background-color, $color) {
     fill: $fill;
-    cursor: pointer;
     background-color: $background-color;
     color: $color;
-    border-radius: 50%;
-    height: 44px;
-    width: 44px;
-    transition: color (vars.$transition-duration) (vars.$transition-timing-function);
+    transition: color vars.$transition-duration vars.$transition-timing-function;
 }
 
 

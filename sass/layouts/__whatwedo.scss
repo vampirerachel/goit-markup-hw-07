@@ -11,9 +11,6 @@
     justify-content: center;
 }
 
-.images__items:not(:last-child) {
-    margin-right: 30px;
-}
 
 .images__title {
     @extend %section__title;
@@ -40,4 +37,8 @@
 
 .images__items {
     position: relative;
+
+&:not(:last-child) {
+    margin-right: 30px;
+}
 }

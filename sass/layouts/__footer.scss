@@ -31,6 +31,7 @@
     line-height: calc(24/14);
     color: vars.$white-color;
     opacity: .6;
+    @extend %transition;
 }
 
 .footer__list:not(:last-child) {
@@ -43,7 +44,7 @@
     color: vars.$white-color;
     cursor: pointer;
     opacity: 1;
-    @extend %transition;
+
 }
 
 .footer__logo {
@@ -73,28 +74,20 @@
     border-radius: 50%;
     height: 44px;
     width: 44px;
-}
-        .findus__item {
-            cursor: pointer;
-            background-color: vars.$footer-svg ;
-            border-radius: 50%;
-            height: 44px;
-            width: 44px;
-        }
-.findus__item:not(:last-child) {
+
+
+&:not(:last-child) {
     margin-right: 10px;
 }
-
+}
 .findus__icon--link {
 @include social__style($white-color);
+@extend %transition;
 
-}
-
-.findus__icon--link:hover {
+&:hover {
     background-color: vars.$highlight-color;
-    @extend %transition;
 }
-
+}
 
 .newsletter {
     display: flex;
@@ -146,6 +139,16 @@
     max-width: 200px;
     display: flex;
     align-items: center;
+    @extend %transition;
+
+&:hover,
+&:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    color: green;
+    background-color: darkblue;
+    cursor: pointer;
+    }
 
 }
 
@@ -156,15 +159,7 @@
     margin-left: 15px;
 }
 
-.newsletter__button:hover,
-.newsletter__button:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    color: green;
-    background-color: darkblue;
-    cursor: pointer;
-    @extend %transition;
-}
+
 
 .newsletter__subscribe {
     fill: vars.$white-color;

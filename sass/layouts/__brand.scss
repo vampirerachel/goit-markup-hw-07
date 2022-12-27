@@ -21,15 +21,16 @@
     border: 1px solid vars.$svg-color;
     border-radius: 4px;
     padding: 16px 32px;
-}
+    @extend %transition;
 
-.brand__icon:hover {
+&:hover {
     fill: vars.$highlight-color;
     border-color: vars.$highlight-color;
     cursor: pointer;
-    transition: color (vars.$transition-duration) (vars.$transition-timing-function);
+    
 }
 
-.brand__icon:not(:last-child) {
+&:not(:last-child) {
     margin-right: 30px;
+}
 }

@@ -32,7 +32,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
-    transition: color vars.$transition-timing-function;
+    @extend %transition;
     color: vars.$text-color-default;
 
     &:hover,

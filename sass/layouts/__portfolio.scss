@@ -27,15 +27,17 @@
     border-radius: 4px;
     border: none;
     padding: 6px 26px;
-}
+    @extend %transition;
 
-.portfolio__button:hover,
-.portfolio__button:focus {
+
+&:hover,
+&:focus {
     color: vars.$white-color;
     background-color: vars.$highlight-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    @extend %transition;
+
+}
 }
 
 .portfolio__button--margin:not(:last-child) {
@@ -50,12 +52,7 @@
     margin-left: calc(-1 * vars.$card-gap);
 }
 
-.portfolio__item:hover,
-.portfolio__item:focus {
 
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    @extend %transition;   
-}
 
 .portfolio__item {
     flex-basis: calc(100% /3 - vars.$card-gap);
@@ -63,7 +60,12 @@
     margin-top: vars.$card-gap;
     cursor: pointer;
 
+&:hover,
+&:focus {
 
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        @extend %transition;
+    }
 }
 
 .card {
@@ -97,11 +99,13 @@
 
 .portfolio__item--position {
     position: relative;
-}
 
-.portfolio__item--position:hover .overlay__style {
+
+&:hover .overlay__style {
     transform: translatey(0);
 }
+}
+
 .overlay {
     position: relative;
     overflow: hidden;
