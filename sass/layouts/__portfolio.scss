@@ -59,6 +59,7 @@
     margin-left: vars.$card-gap;
     margin-top: vars.$card-gap;
     cursor: pointer;
+    @extend %transition;
 
 &:hover,
 &:focus {
@@ -99,7 +100,7 @@
 
 .portfolio__item--position {
     position: relative;
-
+    @extend %transition;
 
 &:hover .overlay__style {
     transform: translatey(0);

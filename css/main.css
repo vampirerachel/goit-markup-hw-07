@@ -26,8 +26,7 @@ ul {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -89,8 +88,7 @@ ul {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -134,10 +132,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.modal__form, #name,
+.input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item:hover, .portfolio__item:focus, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .hero__button, .nav__link {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .contacts__link, .nav__item, .nav__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -168,10 +166,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.modal__form, #name,
+.input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item:hover, .portfolio__item:focus, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .hero__button, .nav__link {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .nav__link, .nav__item, .contacts__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -303,10 +301,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.modal__form, #name,
+.input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item:hover, .portfolio__item:focus, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .nav__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .nav__link, .nav__item, .contacts__link, .hero__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -331,7 +329,7 @@ textarea {
   background-color: #2F303A;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/webstudio/studio-large-image.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/webstudio/studio-large-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -386,10 +384,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.modal__form, #name,
+.input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item:hover, .portfolio__item:focus, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .nav__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .nav__link, .nav__item, .contacts__link, .hero__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -463,10 +461,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.modal__form, #name,
+.input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item:hover, .portfolio__item:focus, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .nav__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .nav__link, .nav__item, .contacts__link, .hero__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -533,10 +531,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.modal__form, #name,
+.input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item:hover, .portfolio__item:focus, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .nav__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -640,10 +638,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.modal__form, #name,
+.input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item:hover, .portfolio__item:focus, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .nav__link, .hero__button, .brand__icon {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -703,10 +701,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.modal__form, #name,
+.input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item:hover, .portfolio__item:focus, .portfolio__button, .nav__link, .hero__button, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -887,10 +885,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.modal__form, #name,
+.input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .nav__link, .hero__button, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item:hover, .portfolio__item:focus {
+#comments, .modal__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1034,10 +1032,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-.nav__link, .hero__button, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item:hover, .portfolio__item:focus, .modal__button, #name,
+.nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position, .modal__button, #name,
 #phone-number,
 #form-email,
-#comments, .modal__form {
+#comments, .modal__form, .input__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

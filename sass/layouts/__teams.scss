@@ -65,6 +65,7 @@
 
 .social__link {
     @include social__style(vars.$svg-color);
+    @extend %transition;
 
 
 &:hover,
